@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass src/styles/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss src/styles/style.css --use autoprefixer -d src/styles"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,15 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Jonas-Petrauskas/e-Commerce-website/issues"
   },
   "homepage": "https://github.com/Jonas-Petrauskas/e-Commerce-website#readme",
   "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.36.0"
   }
 }
