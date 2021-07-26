@@ -1,0 +1,93 @@
+@import "./variables";
+
+#top__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  margin-top: 1rem;
+}
+
+#top__slider__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 80vw;
+  height: 100%;
+}
+
+#top__slider__wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.top__slider__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 0.6rem;
+}
+
+.top__slider__thumbnail {
+  object-fit: cover;
+  max-width: 20vw;
+  max-height: 20rem;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 0.3;
+}
+
+.top__slider__thumbnail:hover {
+  opacity: 1;
+}
+
+.top__slider__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  a {
+    border-bottom: 0.2rem solid $main__color;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+}
+
+.top__silder__brand__name {
+  font-size: $text__small;
+  color: grey;
+}
+
+.slider__arrow {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: $main__color;
+}
+
+.slider__arrow:hover {
+  opacity: 0.5;
+  width: 2rem;
+  height: 2rem;
+}
+
+// SIZE CHANGES WHNE IT REACHES TABLET SCREEN SIZE
+@media (max-width: 768px) {
+  .top__slider__text p {
+    font-size: $text__small;
+  }
+}
+@media (max-width: 768px) {
+  .top__slider__text a {
+    font-size: $text__small;
+  }
+}
