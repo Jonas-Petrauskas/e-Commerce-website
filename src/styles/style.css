@@ -427,7 +427,6 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 6rem;
-  width: 100vw;
 }
 
 .main__new__text {
